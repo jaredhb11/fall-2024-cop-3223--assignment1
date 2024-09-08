@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <math.h>
 
+#define PI 3.14159
+
 //gcc fracturing.c && ./a.out
+//gcc fracturing.c -lm && ./a.out
 
 double calculateDistance() {
     int x1 = 0;
@@ -29,10 +32,20 @@ double calculateDistance() {
     return distance;
 }
 
+double calculatePerimeter() {
+    double distance = calculateDistance();
+
+    double perimeter = distance * PI; 
+
+    printf("The disfasdfasdfsadfadfasdfsadfasdfints is %lf\n", perimeter);
+
+}
+
 
 int main(int argc, char **argv) {
 
-    calculateDistance();
+    //calculateDistance();
+    calculatePerimeter();
 
 
 
