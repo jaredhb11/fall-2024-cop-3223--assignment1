@@ -6,6 +6,21 @@
 //gcc fracturing.c && ./a.out
 //gcc fracturing.c -lm && ./a.out
 
+//********************************************************
+// fracturing.c
+// Author: Jared Bialek
+// Date: 09/08/24
+// Class: COP 3223, Professor Parra
+// Purpose: This program's goal is to learn how to use fracturing with functions to make the code more organized and 
+// easier to read.
+// Input: The inputs are x1, x2, y1, and y2.
+//
+// Output: The output is the coordinates, the distance, perimeter, area, width, and height.
+// //********************************************************
+
+// I could not figure out how to get the program to not output the distance every time because
+// we arent allowed to use arguments in functions.
+
 int inputx1() {
     int x1 = 0;
     printf("Enter x value of point 1 (x1) : ");
@@ -38,11 +53,7 @@ int inputy2() {
     return y2;
 }
 
-
-
-
 double calculateDistance() {
-
     int x1 = inputx1();
     int x2 = inputx2();
     int y1 = inputy1();
@@ -98,7 +109,6 @@ double calculateHeight() {
 }
 
 int main(int argc, char **argv) { 
-
     calculateDistance();
     calculatePerimeter();
     calculateArea();
