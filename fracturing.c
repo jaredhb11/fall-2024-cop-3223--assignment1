@@ -44,8 +44,8 @@ int inputy2() {
 double calculateDistance() {
 
     int x1 = inputx1();
-    int y1 = inputy1();
     int x2 = inputx2();
+    int y1 = inputy1();
     int y2 = inputy2();
     double distance = 0;
 
