@@ -18,8 +18,13 @@
 // Output: The output is the coordinates, the distance, perimeter, area, width, and height.
 // //********************************************************
 
-// I could not figure out how to get the program to not output the distance every time because
-// we arent allowed to use arguments in functions.
+
+//********************************************************
+// int inputx1()
+//
+// Purpose:         Takes in user input for x1 coordinate.
+// Output:          Output is x1.
+//********************************************************
 
 int inputx1() {
     int x1 = 0;
@@ -29,6 +34,13 @@ int inputx1() {
     return x1;
 }
 
+//********************************************************
+// int inputy1()
+//
+// Purpose:         Takes in user input for y1 coordinate.
+// Output:          Output is y1.
+//********************************************************
+
 int inputy1() {
     int y1 = 0;
     printf("Enter y value of point 1 (y1) : ");
@@ -36,6 +48,13 @@ int inputy1() {
 
     return y1;
 }
+
+//********************************************************
+// int inputx2()
+//
+// Purpose:         Takes in user input for x2 coordinate.
+// Output:          Output is x2.
+//********************************************************
 
 int inputx2() {
     int x2 = 0;
@@ -45,6 +64,13 @@ int inputx2() {
     return x2;
 }
 
+//********************************************************
+// int inputy2()
+//
+// Purpose:         Takes in user input for y2 coordinate.
+// Output:          Output is y2.
+//********************************************************
+
 int inputy2() {
     int y2 = 0;
     printf("Enter y value of point 2 (y2) : ");
@@ -52,6 +78,13 @@ int inputy2() {
 
     return y2;
 }
+
+//********************************************************
+// double calculateDistance()
+//
+// Purpose:         Asks the user for all 4 coordinates then calculates the distance between the 2 points.
+// Output:          Output is the distance between the 2 points.
+//********************************************************
 
 double calculateDistance() {
     int x1 = inputx1();
@@ -71,6 +104,14 @@ double calculateDistance() {
     return distance;
 }
 
+//********************************************************
+// double calculatePerimeter()
+//
+// Purpose:         Calls the distance function to ask the user for all 4 coordinates and then
+//                  uses the distance to calculate the perimeter of the circular city.
+// Output:          Output is the distance between the 2 points.
+//********************************************************
+
 double calculatePerimeter() {
     double distance = calculateDistance();
 
@@ -80,6 +121,14 @@ double calculatePerimeter() {
 
     return 2.0;
 }
+
+//********************************************************
+// double calculateArea()
+//
+// Purpose:         Calls the distance function to ask the user for all 4 coordinates and then
+//                  uses the distance to calculate the area of the circular city.
+// Output:          Output is the distance between the 2 points.
+//********************************************************
 
 double calculateArea() {
     double distance = calculateDistance();
@@ -92,6 +141,14 @@ double calculateArea() {
     return 3.0;
 }
 
+//********************************************************
+// double calculateWidth()
+//
+// Purpose:         Calls the distance function to ask the user for all 4 coordinates and then
+//                  uses the width, which is the distance of a circle, to calculate the area of the circular city.
+// Output:          Output is the distance between the 2 points.
+//********************************************************
+
 double calculateWidth() {
     double distance = calculateDistance();
 
@@ -99,6 +156,14 @@ double calculateWidth() {
 
     return 1.0;
 }
+
+//********************************************************
+// double calculateHeight()
+//
+// Purpose:         Calls the distance function to ask the user for all 4 coordinates and then
+//                  uses the height, which is the distance of a circle, to calculate the area of the circular city.
+// Output:          Output is the distance between the 2 points.
+//********************************************************
 
 double calculateHeight() {
     double distance = calculateDistance();
